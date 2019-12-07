@@ -37,9 +37,9 @@
 
 (let* ((acme/bgyellow "#FFFFDD")
        (acme/fg "#000000")
-       (acme/blue "#0000FF")
+       (acme/darkblue "#000088")
        (acme/lightblue "#5180B3")
-       (acme/green "#339900")
+       (acme/darkgreen "#006600")
        (acme/darkgray "#757575")
        (acme/lightgray "#E8E8E8"))
 
@@ -64,11 +64,11 @@
    `(font-lock-variable-name-face	((t (:foreground ,acme/fg))))
 
    ;; except for strings and comments
-   `(font-lock-string-face		((t (:foreground ,acme/green))))
+   `(font-lock-string-face		((t (:foreground ,acme/darkgreen))))
    `(font-lock-comment-face		((t (:foreground ,acme/lightblue))))
    `(font-lock-comment-delimiter-face	((t (:foreground ,acme/lightblue))))
    `(font-lock-warning-face		((t (:foreground "red" :bold t))))
-   `(dired-directory ((t (:foreground ,acme/blue))))))
+   `(dired-directory ((t (:foreground ,acme/darkblue))))))
 
 ;;;###autoload
 (when load-file-name
