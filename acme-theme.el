@@ -35,7 +35,7 @@
 ;;; Code:
 (deftheme acme "Colorless acme like theme")
 
-(let* ((acme/bgyellow "#FFFFDD")
+(let* ((acme/bgyellow "#ffffe0")
        (acme/fg "#000000")
        (acme/darkblue "#000088")
        (acme/lightblue "#5180B3")
@@ -67,6 +67,19 @@
    `(font-lock-string-face		((t (:foreground ,acme/darkgreen))))
    `(font-lock-comment-face		((t (:foreground ,acme/lightblue))))
    `(font-lock-comment-delimiter-face	((t (:foreground ,acme/lightblue))))
+   `(font-lock-doc-string-face ((t (:foreground ,acme/lightblue))))
+   `(font-lock-doc-face ((t (:foreground ,acme/lightblue))))
+   `(font-lock-preprocessor-face ((t (:foreground ,acme/lightblue))))
+   `(font-lock-regexp-grouping-construct ((t (:foreground ,acme/lightblue))))
+
+   ;; php
+   `(php-doc-annotation-tag ((t (:foreground ,acme/lightblue))))
+   `(php-doc-class-name ((t (:foreground ,acme/lightblue))))
+   `(php-doc-$this-sigil ((t (:foreground ,acme/lightblue))))
+   `(php-doc-variable-sigil ((t (:foreground ,acme/lightblue))))
+   `(php-doc-$this ((t (:foreground ,acme/lightblue))))
+   `(php-type ((t (:foreground ,acme/lightblue))))
+
    `(font-lock-warning-face		((t (:foreground "red" :bold t))))
    `(dired-directory ((t (:foreground ,acme/darkblue))))))
 
