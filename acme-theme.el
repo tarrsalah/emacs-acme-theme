@@ -35,7 +35,7 @@
 ;;; Code:
 (deftheme acme "Colorless acme like theme")
 
-(let* ((acme/bgyellow "#ffffe0")
+(let* ((acme/bgyellow "#ffffff")
        (acme/fg "#000000")
        (acme/darkblue "#000088")
        (acme/lightblue "#5180B3")
